@@ -1,9 +1,32 @@
 <!DOCTYPE html>
+<head>
+    <style>
+        #div1{
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function fn1(thisObj) {
+            thisObj.style.width = '400px',
+            thisObj.style.height = '400px',
+            thisObj.style.backgroundColor = 'red'
+        }
+    </script>
+
+</head>
 
 <html>
     <title>测试title</title>
     <meta charset="utf-8">
     <body>
+
+        <form>
+            <input type="button" value="按钮" onclick="fn(1)">
+        </form>
+
         <h1 align="center" name='top'>一级标签
             <h2 align="right" >二级标签
                 <h3>三级标签
@@ -66,6 +89,8 @@
         <a href="#top" target="_self">
             <h3>返回顶部</h3>
         </a>
+
+        <div id="div1" onclick="fn1(this)"></div>
 
     </body>
 
