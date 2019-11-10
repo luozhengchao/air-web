@@ -9,7 +9,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "webpack"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,14 @@
   "bugs": {
     "url": "https://github.com/luozhengchao/air-web/issues"
   },
-  "homepage": "https://github.com/luozhengchao/air-web#readme"
+  "homepage": "https://github.com/luozhengchao/air-web#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
 }

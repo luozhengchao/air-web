@@ -1,0 +1,6 @@
+{
+    // "presets" : ["es2015","latest"],
+    "presets":["@babel/preset-env"],
+	"plugins" : []
+}
+
